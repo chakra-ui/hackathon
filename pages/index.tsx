@@ -1,12 +1,11 @@
-import Head from 'next/head';
-import Image from 'next/image';
+import { Goal } from '../src/components/Goal';
 import { LogoGrid } from '../src/components/LogoGrid';
-import styles from '../styles/Home.module.css';
 
 export default function Home() {
   return (
     <div>
       <LogoGrid />
+      <Goal />
     </div>
   );
 }

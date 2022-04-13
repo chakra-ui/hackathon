@@ -28,7 +28,7 @@ export const LogoGrid = () => (
           {Object.entries(logos).map(([name, Logo]) => (
             <Center key={name}>
               <Logo
-                h={{ base: '8', md: '10' }}
+                h={{ base: '8', md: '12' }}
                 maxW='180px'
                 fill='emphasized'
               />

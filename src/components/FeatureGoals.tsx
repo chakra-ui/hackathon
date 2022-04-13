@@ -11,7 +11,7 @@ export const FeatureGoals = (props: FeatureGoalsProps) => {
   const { title, children, icon } = props;
   return (
     <Box>
-      <Icon width='auto' as={icon} color='goalIcon' fontSize='3rem' />
+      <Icon as={icon} color='goalIcon' fontSize='3rem' />
       <Stack mt='6'>
         <Text as='h3' fontSize='lg' fontWeight='bold' color='secondaryHeading'>
           {title}

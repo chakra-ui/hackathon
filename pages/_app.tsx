@@ -12,11 +12,11 @@ const theme = extendTheme({
         _light: 'white',
         _dark: 'gray.800',
       },
-      defaultHeadingText: {
+      defaultHeading: {
         _light: 'black',
         _dark: 'gray.100',
       },
-      defaultBodyText: {
+      defaultBod: {
         _light: 'gray.600',
         _dark: 'gray.200',
       },
@@ -25,11 +25,11 @@ const theme = extendTheme({
         _light: 'gray.800',
         _dark: 'gray.400',
       },
-      secondaryHeadingText: {
+      secondaryHeading: {
         _light: 'white',
         _dark: 'gray.800',
       },
-      secondaryBodyText: {
+      secondaryBod: {
         _light: 'gray.300',
         _dark: 'gray.700',
       },

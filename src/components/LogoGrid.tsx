@@ -11,7 +11,7 @@ import * as logos from './Logos';
 
 export const LogoGrid = () => (
   <Box bg='alternativeBg'>
-    <Container maxW='container.xl' py={{ base: '12', md: '16' }}>
+    <Container maxW='container.xl' py={{ base: '12', md: '20' }}>
       <Stack spacing='8'>
         <Text
           fontSize={{ base: 'md', md: '3xl' }}

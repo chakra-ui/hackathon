@@ -47,6 +47,16 @@ const theme = extendTheme({
         _light: 'white',
         _dark: 'gray.600',
       },
+
+      muted: {
+        _light: 'gray.400',
+        _dark: 'gray.600',
+      },
+
+      activeIcon: {
+        _light: 'green.500',
+        _dark: 'green.200',
+      },
     },
   },
 });

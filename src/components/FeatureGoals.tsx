@@ -1,8 +1,8 @@
 import * as React from 'react';
-import { Box, Stack, Text } from '@chakra-ui/react';
+import { Box, Icon, Stack, Text } from '@chakra-ui/react';
 
 interface FeatureGoalsProps {
-  icon: React.ReactElement;
+  icon: React.ElementType;
   title: string;
   children: React.ReactNode;
 }
@@ -11,14 +11,12 @@ export const FeatureGoals = (props: FeatureGoalsProps) => {
   const { title, children, icon } = props;
   return (
     <Box>
-      <Box color='goalIcon' fontSize='2.5rem'>
-        {icon}
-      </Box>
+      <Icon width='auto' as={icon} color='goalIcon' fontSize='3rem' />
       <Stack mt='6'>
         <Text as='h3' fontSize='lg' fontWeight='bold' color='secondaryHeading'>
           {title}
         </Text>
-        <Text pr='6' lineHeight='tall' color='secondaryText'>
+        <Text pr='6' lineHeight='tall' color='secondaryBody'>
           {children}
         </Text>
       </Stack>

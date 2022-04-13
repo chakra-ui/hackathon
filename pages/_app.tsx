@@ -3,7 +3,7 @@ import { ChakraProvider, extendTheme } from '@chakra-ui/react';
 const theme = extendTheme({
   semanticTokens: {
     colors: {
-      featureIcon: {
+      goalIcon: {
         _light: 'teal.300',
         _dark: 'teal.500',
       },
@@ -16,7 +16,7 @@ const theme = extendTheme({
         _light: 'black',
         _dark: 'gray.100',
       },
-      defaultBod: {
+      defaultBody: {
         _light: 'gray.600',
         _dark: 'gray.200',
       },
@@ -29,7 +29,7 @@ const theme = extendTheme({
         _light: 'white',
         _dark: 'gray.800',
       },
-      secondaryBod: {
+      secondaryBody: {
         _light: 'gray.300',
         _dark: 'gray.700',
       },

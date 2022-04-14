@@ -1,4 +1,12 @@
-import { Box, Flex, Heading, Icon, SimpleGrid, VStack } from '@chakra-ui/react';
+import {
+  Box,
+  Flex,
+  Heading,
+  Icon,
+  SimpleGrid,
+  Text,
+  VStack,
+} from '@chakra-ui/react';
 import * as React from 'react';
 import { FirstPosition, SecondPosition, ThirdPosition } from './Icons';
 
@@ -53,7 +61,7 @@ export const PrizeCard = (props: PrizeCardProps) => {
 };
 
 export const Prizes = () => (
-  <Box as='section' bg='secondaryBg' py='16' px={{ base: '4', md: '8' }}>
+  <Box as='section' bg='secondaryBg' py='20' px={{ base: '4', md: '8' }}>
     <Box py='8'>
       <Heading
         size='2xl'
@@ -68,10 +76,11 @@ export const Prizes = () => (
     <SimpleGrid
       columns={{ base: 1, lg: 3 }}
       spacing={{ base: '8', lg: '0' }}
-      maxW='7xl'
+      maxW='696px'
       mx='auto'
       justifyItems='center'
       alignItems='baseline'
+      py='8'
     >
       <PrizeCard
         icon={SecondPosition}
@@ -98,5 +107,14 @@ export const Prizes = () => (
         paddingTop='8'
       />
     </SimpleGrid>
+    <Text
+      textAlign='center'
+      pt='4'
+      lineHeight='tall'
+      color='secondaryBody'
+      fontSize={{ base: 'xl', lg: '2xl' }}
+    >
+      * Prizes are awarded per team
+    </Text>
   </Box>
 );

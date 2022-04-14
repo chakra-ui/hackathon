@@ -6,7 +6,7 @@ import { Design, Develop, Document, Ideate } from './Icons';
 
 export const Goal = () => {
   return (
-    <Box as='section' py='20'>
+    <Box as='section' >
       <Box bg='secondaryBg' color='white' pt='24' pb='12rem'>
         <Box
           maxW={{ base: 'xl', md: '7xl' }}

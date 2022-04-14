@@ -9,7 +9,7 @@ export const Rounds = () => {
       maxW={{ base: 'xl', md: '7xl' }}
       mx='auto'
       px={{ base: '6', md: '8' }}
-      py='4'
+      py='20'
     >
       <Heading
         size='2xl'

@@ -3,13 +3,13 @@ import * as React from 'react';
 import { Check } from './Icons';
 
 export interface TimelineItemProp {
-  date: string;
   description: string;
+  info?: string;
   isActive: boolean;
 }
 
 export const TimelineItem = (props: TimelineItemProp) => {
-  const { date, description, isActive, ...rest } = props;
+  const { description, info, isActive, ...rest } = props;
 
   return (
     <Stack
@@ -30,7 +30,7 @@ export const TimelineItem = (props: TimelineItemProp) => {
           fontWeight='medium'
           minW='300px'
         >
-          {date}
+          {description}
         </Text>
       </HStack>
       <Text
@@ -40,7 +40,7 @@ export const TimelineItem = (props: TimelineItemProp) => {
         fontWeight='medium'
         textAlign='left'
       >
-        {description}
+        {info}
       </Text>
     </Stack>
   );
@@ -48,12 +48,12 @@ export const TimelineItem = (props: TimelineItemProp) => {
 
 export const Timeline = () => {
   return (
-    <Box bg='alternativeBg' as='section'>
+    <Box bg='alternativeBg' as='section' py='20'>
       <Box
         maxW={{ base: 'xl', md: '7xl' }}
         mx='auto'
         px={{ base: '6', md: '8' }}
-        py='12'
+        py='8'
       >
         <Heading
           size='2xl'
@@ -66,53 +66,53 @@ export const Timeline = () => {
         <Stack spacing={{ base: '20', lg: '12' }} my='20'>
           <TimelineItem
             isActive
-            date='May 3rd @ 12 noon GMT'
-            description='Team Registration opens'
+            description='May 3rd @ 12 noon GMT'
+            info='Team Registration opens'
           />
           <TimelineItem
             isActive={false}
-            date='May 5th @ 12 noon GMT'
-            description='Team Registration closes'
+            description='May 5th @ 12 noon GMT'
+            info='Team Registration closes'
           />
           <TimelineItem
             isActive={false}
-            date='May 6th'
-            description='Hackathon Introduction and Structure (YouTube)'
+            description='May 6th'
+            info='Hackathon Introduction and Structure (YouTube)'
           />
           <TimelineItem
             isActive={false}
-            date='May 6th'
-            description='Teams join the Discord Channel + Engagement'
+            description='May 6th'
+            info='Teams join the Discord Channel + Engagement'
           />
           <TimelineItem
             isActive={false}
-            date='May 9th'
-            description='Start hacking!'
+            description='May 9th'
+            info='Start hacking!'
           />
           <TimelineItem
             isActive={false}
-            date='May 9th - May 11th'
-            description='Elimination Round'
+            description='May 9th - May 11th'
+            info='Elimination Round'
           />
           <TimelineItem
             isActive={false}
-            date='May 12th'
-            description='Announcing teams moving to the next stage'
+            description='May 12th'
+            info='Announcing teams moving to the next stage'
           />
           <TimelineItem
             isActive={false}
-            date='May 12th - May 18th'
-            description='Final Round'
+            description='May 12th - May 18th'
+            info='Final Round'
           />
           <TimelineItem
             isActive={false}
-            date='May 19th'
-            description='Team Presentations & Judging'
+            description='May 19th'
+            info='Team Presentations & Judging'
           />
           <TimelineItem
             isActive={false}
-            date='May 19th'
-            description='Winners announced!'
+            description='May 19th'
+            info='Winners announced!'
           />
         </Stack>
       </Box>

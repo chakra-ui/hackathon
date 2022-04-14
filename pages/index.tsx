@@ -1,3 +1,4 @@
+import { Criteria } from '../src/components/Criteria';
 import { Goal } from '../src/components/Goal';
 import { LogoGrid } from '../src/components/LogoGrid';
 import { Prizes } from '../src/components/Prizes';
@@ -12,6 +13,7 @@ export default function Home() {
       <Rounds />
       <Timeline />
       <Prizes />
+      <Criteria />
     </div>
   );
 }

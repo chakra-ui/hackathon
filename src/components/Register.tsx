@@ -28,7 +28,7 @@ export const Register = () => {
         <Text py='4' lineHeight='tall' color='defaultBody' fontSize='lg'>
           We would love to see what wonderful component design you come up with!
         </Text>
-        <Button mt='8' size='lg' as='a' colorScheme='teal' href='#'>
+        <Button mt='8' mb="4" size='lg' as='a' colorScheme='teal' href='#'>
           Register
         </Button>
       </Box>

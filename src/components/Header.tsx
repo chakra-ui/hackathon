@@ -1,5 +1,6 @@
-import { Box, Heading, Text } from '@chakra-ui/react';
+import { Box, Center, Heading, Text } from '@chakra-ui/react';
 import * as React from 'react';
+import { Timer } from './Timer';
 
 export const Header = () => {
   return (
@@ -33,6 +34,9 @@ export const Header = () => {
           May 9th until May 19th, 2022.
         </Text>
       </Box>
+      <Center py='4'>
+        <Timer />
+      </Center>
     </Box>
   );
 };

@@ -1,4 +1,5 @@
 import { Criteria } from '../src/components/Criteria';
+import { Footer } from '../src/components/Footer';
 import { Goal } from '../src/components/Goal';
 import { LogoGrid } from '../src/components/LogoGrid';
 import { Prizes } from '../src/components/Prizes';
@@ -16,6 +17,7 @@ export default function Home() {
       <Prizes />
       <Criteria />
       <Register />
+      <Footer />
     </div>
   );
 }

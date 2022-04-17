@@ -1,4 +1,3 @@
-import * as React from 'react';
 import { Box, Icon, Stack, Text } from '@chakra-ui/react';
 
 interface FeatureGoalsProps {

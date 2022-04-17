@@ -1,8 +1,7 @@
-import { HStack, Icon, Stack, Text, Box, Heading } from '@chakra-ui/react';
-import * as React from 'react';
+import { Box, HStack, Icon, Stack, Text } from '@chakra-ui/react';
+import { timelineData } from '../data/data';
 import { DefaultHeading } from './DefaultHeading';
 import { Check } from './Icons';
-import { timelineData } from '../data/data';
 
 export interface TimelineItemProp {
   date: string;

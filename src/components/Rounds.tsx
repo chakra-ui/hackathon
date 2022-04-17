@@ -1,5 +1,4 @@
 import { Box, Heading, ListItem, Text, UnorderedList } from '@chakra-ui/react';
-import * as React from 'react';
 import { DefaultHeading } from './DefaultHeading';
 
 export const Rounds = () => {

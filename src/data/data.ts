@@ -82,3 +82,11 @@ export const timelineData = [
     description: 'Winners announced!',
   },
 ];
+
+export const judgingCriteriaData = [
+  'Ease of customization with style props',
+  'The number of variations',
+  'The usage of style props',
+  'Proper documentation',
+  'Look and feel of component',
+];

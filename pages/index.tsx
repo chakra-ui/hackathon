@@ -3,6 +3,7 @@ import { Footer } from '../src/components/Footer';
 import { Goal } from '../src/components/Goal';
 import { Header } from '../src/components/Header';
 import { LogoGrid } from '../src/components/LogoGrid';
+import { Navigation } from '../src/components/Navigation';
 import { Prizes } from '../src/components/Prizes';
 import { Register } from '../src/components/Register';
 import { Rounds } from '../src/components/Rounds';
@@ -12,6 +13,7 @@ import { Timeline } from '../src/components/Timeline';
 export default function Home() {
   return (
     <div>
+      <Navigation />
       <Header />
       <LogoGrid />
       <Goal />

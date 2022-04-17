@@ -16,10 +16,11 @@ export interface PrizeCardProps {
   bg: string;
   maxW: string;
   paddingTop: string;
+  fontSize: string;
 }
 
 export const PrizeCard = (props: PrizeCardProps) => {
-  const { name, icon, prize, bg, maxW, paddingTop, ...rest } = props;
+  const { name, icon, prize, bg, maxW, paddingTop, fontSize, ...rest } = props;
 
   return (
     <Box
@@ -43,7 +44,7 @@ export const PrizeCard = (props: PrizeCardProps) => {
         >
           {name}
         </Heading>
-        <Icon aria-hidden as={icon} fontSize='5xl' />
+        <Icon aria-hidden as={icon} fontSize={fontSize} />
       </VStack>
       <Flex align='flex-end' justify='center' fontWeight='extrabold' my='8'>
         <Heading
@@ -83,27 +84,30 @@ export const Prizes = () => (
     >
       <PrizeCard
         icon={SecondPosition}
-        name='Second Position'
+        name='Second Place'
         prize='$200'
         bg='whiteAlpha.200'
         maxW='md'
         paddingTop='8'
+        fontSize='6xl'
       />
       <PrizeCard
         icon={FirstPosition}
-        name='First Position'
+        name='First Place'
         prize='$200'
         bg='whiteAlpha.300'
         maxW='md'
         paddingTop='16'
+        fontSize='7xl'
       />
       <PrizeCard
         icon={ThirdPosition}
-        name='Third Position'
+        name='Third Place'
         prize='$200'
         bg='whiteAlpha.200'
         maxW='md'
         paddingTop='8'
+        fontSize='5xl'
       />
     </SimpleGrid>
     <Text

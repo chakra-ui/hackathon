@@ -23,34 +23,34 @@ const theme = extendTheme({
 
       secondaryBg: {
         _light: 'gray.800',
-        _dark: 'gray.400',
+        _dark: 'gray.900',
       },
       secondaryHeading: {
         _light: 'white',
-        _dark: 'gray.800',
+        _dark: 'white',
       },
       secondaryBody: {
         _light: 'gray.300',
-        _dark: 'gray.700',
+        _dark: 'gray.300',
       },
 
       alternativeBg: {
         _light: 'gray.50',
-        _dark: 'gray.400',
+        _dark: 'gray.700',
       },
 
       countdownBg: {
         _light: 'teal.400',
-        _dark: 'teal.600',
+        _dark: 'teal.300',
       },
       countdownText: {
         _light: 'white',
-        _dark: 'gray.600',
+        _dark: 'gray.700',
       },
 
       muted: {
         _light: 'gray.400',
-        _dark: 'gray.600',
+        _dark: 'gray.500',
       },
 
       activeIcon: {

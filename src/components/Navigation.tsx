@@ -5,14 +5,19 @@ import {
   Flex,
   HStack,
   Icon,
+  IconButton,
   Spacer,
   useBreakpointValue,
+  useColorMode,
 } from '@chakra-ui/react';
 import * as React from 'react';
 import { ChakraLogo } from './Icons';
+import { MoonIcon, SunIcon } from '@chakra-ui/icons';
 
 export const Navigation = () => {
   const isDesktop = useBreakpointValue({ base: false, lg: true });
+  const { toggleColorMode, colorMode } = useColorMode();
+
   return (
     <Box as='section' pb={{ base: '12', md: '24' }}>
       <Box
@@ -32,9 +37,10 @@ export const Navigation = () => {
             <Icon
               width='auto'
               as={ChakraLogo}
+              color='defaultHeading'
               fontSize={{ base: '2rem', lg: '2.5rem' }}
             />
-            {isDesktop && (
+            {isDesktop ? (
               <Flex justify='space-between' flex='1'>
                 <ButtonGroup variant='link' spacing='8'>
                   {['About', 'Rounds', 'Rules', 'Prizes', 'Timeline'].map(
@@ -44,8 +50,27 @@ export const Navigation = () => {
                   )}
                 </ButtonGroup>
                 <Spacer />
-                <Button colorScheme='teal'>Register</Button>
+                <IconButton
+                  variant='outline'
+                  colorScheme='teal'
+                  aria-label='Switch color mode'
+                  fontSize='16px'
+                  onClick={toggleColorMode}
+                  icon={colorMode === 'light' ? <MoonIcon /> : <SunIcon />}
+                />
+                <Button colorScheme='teal' ml='4'>
+                  Register
+                </Button>
               </Flex>
+            ) : (
+              <IconButton
+                variant='outline'
+                colorScheme='teal'
+                aria-label='Switch color mode'
+                fontSize='16px'
+                onClick={toggleColorMode}
+                icon={colorMode === 'light' ? <MoonIcon /> : <SunIcon />}
+              />
             )}
           </HStack>
         </Box>

@@ -7,7 +7,7 @@ export const Footer = () => {
       as='footer'
       bg='secondaryBg'
       px={{ base: '6', md: '8' }}
-      py='20'
+      py='10'
       textAlign={{ base: 'left', lg: 'center' }}
     >
       <Box maxW={{ base: 'xl', md: '2xl' }} mx='auto'>

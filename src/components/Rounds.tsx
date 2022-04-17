@@ -14,7 +14,6 @@ export const Rounds = () => {
   return (
     <Box
       as='section'
-      bg='defaultBg'
       maxW={{ base: 'xl', md: '7xl' }}
       mx='auto'
       px={{ base: '6', md: '8' }}

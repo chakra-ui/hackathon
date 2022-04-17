@@ -6,7 +6,6 @@ export const Header = () => {
   return (
     <Box
       as='section'
-      bg='defaultBg'
       maxW={{ base: 'xl', md: '2xl' }}
       mx='auto'
       px={{ base: '6', md: '8' }}

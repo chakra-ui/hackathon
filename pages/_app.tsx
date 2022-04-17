@@ -57,6 +57,10 @@ const theme = extendTheme({
         _light: 'teal.500',
         _dark: 'teal.200',
       },
+      accentText: {
+        _light: 'teal.500',
+        _dark: 'teal.200',
+      },
     },
   },
 });

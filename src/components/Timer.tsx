@@ -1,4 +1,5 @@
 import { Box, HStack, Text, useInterval } from '@chakra-ui/react';
+import * as React from 'react';
 
 //TimeUnit
 interface TimeUnitProps {

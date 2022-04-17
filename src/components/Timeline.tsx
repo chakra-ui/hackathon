@@ -51,7 +51,7 @@ export const TimelineItem = (props: TimelineItemProp) => {
 
 export const Timeline = () => {
   return (
-    <Box bg='alternativeBg' as='section' py='20'>
+    <Box bg='defaultBg' as='section' py='20'>
       <Box
         maxW={{ base: 'xl', md: '7xl' }}
         mx='auto'

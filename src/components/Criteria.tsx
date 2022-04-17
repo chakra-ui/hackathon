@@ -1,5 +1,6 @@
 import { Box, Heading, Stack, Text } from '@chakra-ui/react';
 import * as React from 'react';
+import { DefaultHeading } from './DefaultHeading';
 import { TimelineItem } from './Timeline';
 
 export const Criteria = () => {
@@ -10,14 +11,7 @@ export const Criteria = () => {
         mx='auto'
         px={{ base: '6', md: '8' }}
       >
-        <Heading
-          size='2xl'
-          lineHeight='short'
-          fontWeight='extrabold'
-          color='defaultHeading'
-        >
-          Judging Criteria
-        </Heading>
+        <DefaultHeading> Judging Criteria</DefaultHeading>
         <Text
           pt='4'
           lineHeight='tall'

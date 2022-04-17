@@ -1,5 +1,6 @@
 import { Box, Heading, ListItem, Text, UnorderedList } from '@chakra-ui/react';
 import * as React from 'react';
+import { DefaultHeading } from './DefaultHeading';
 
 export const Rounds = () => {
   return (
@@ -11,14 +12,7 @@ export const Rounds = () => {
       px={{ base: '6', md: '8' }}
       py='20'
     >
-      <Heading
-        size='2xl'
-        lineHeight='short'
-        fontWeight='extrabold'
-        color='defaultHeading'
-      >
-        The rounds
-      </Heading>
+      <DefaultHeading>The Rounds</DefaultHeading>
       <Text
         pt='4'
         lineHeight='tall'

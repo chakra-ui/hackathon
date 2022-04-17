@@ -1,5 +1,6 @@
 import { HStack, Icon, Stack, Text, Box, Heading } from '@chakra-ui/react';
 import * as React from 'react';
+import { DefaultHeading } from './DefaultHeading';
 import { Check } from './Icons';
 
 export interface TimelineItemProp {
@@ -55,14 +56,7 @@ export const Timeline = () => {
         px={{ base: '6', md: '8' }}
         py='8'
       >
-        <Heading
-          size='2xl'
-          lineHeight='short'
-          fontWeight='extrabold'
-          color='defaultHeading'
-        >
-          Timeline
-        </Heading>
+        <DefaultHeading>Timeline</DefaultHeading>
         <Stack spacing={{ base: '20', lg: '12' }} my='20'>
           <TimelineItem
             isActive

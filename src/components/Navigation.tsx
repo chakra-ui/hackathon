@@ -18,6 +18,29 @@ export const Navigation = () => {
   const isDesktop = useBreakpointValue({ base: false, lg: true });
   const { toggleColorMode, colorMode } = useColorMode();
 
+  const NavItems = [
+    {
+      nav: 'About',
+      link: '#about',
+    },
+    {
+      nav: 'Rounds',
+      link: '#rounds',
+    },
+    {
+      nav: 'Rules',
+      link: '#rules',
+    },
+    {
+      nav: 'Prizes',
+      link: '#prizes',
+    },
+    {
+      nav: 'Timeline',
+      link: '#timeline',
+    },
+  ];
+
   return (
     <Box as='section' pb={{ base: '12', md: '24' }}>
       <Box
@@ -43,11 +66,20 @@ export const Navigation = () => {
             {isDesktop ? (
               <Flex justify='space-between' flex='1'>
                 <ButtonGroup variant='link' spacing='8'>
-                  {['About', 'Rounds', 'Rules', 'Prizes', 'Timeline'].map(
-                    (item) => (
-                      <Button key={item}>{item}</Button>
-                    )
-                  )}
+                  {NavItems.map((item, index) => (
+                    <Button
+                      as='a'
+                      href={item.link}
+                      key={index}
+                      textDecoration='none'
+                      _hover={{
+                        textDecoration: 'none',
+                        color: 'teal.400',
+                      }}
+                    >
+                      {item.nav}
+                    </Button>
+                  ))}
                 </ButtonGroup>
                 <Spacer />
                 <IconButton

@@ -37,7 +37,7 @@ const RuleItem = (props: RuleItemProps) => {
 
 export const Rules = () => {
   return (
-    <Box bg='alternativeBg' as='section'>
+    <Box bg='alternativeBg' as='section' id='rules'>
       <Box
         maxW={{ base: 'xl', md: '7xl' }}
         mx='auto'

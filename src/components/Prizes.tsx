@@ -61,7 +61,13 @@ export const PrizeCard = (props: PrizeCardProps) => {
 };
 
 export const Prizes = () => (
-  <Box as='section' bg='secondaryBg' py='20' px={{ base: '4', md: '8' }}>
+  <Box
+    as='section'
+    id='prizes'
+    bg='secondaryBg'
+    py='20'
+    px={{ base: '4', md: '8' }}
+  >
     <Box py='8'>
       <Heading
         size='2xl'

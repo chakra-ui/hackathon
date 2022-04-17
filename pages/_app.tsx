@@ -54,8 +54,8 @@ const theme = extendTheme({
       },
 
       activeIcon: {
-        _light: 'green.500',
-        _dark: 'green.200',
+        _light: 'teal.500',
+        _dark: 'teal.200',
       },
     },
   },

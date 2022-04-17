@@ -1,5 +1,14 @@
-import { Box, Heading, ListItem, Text, UnorderedList } from '@chakra-ui/react';
+import {
+  Box,
+  Heading,
+  HStack,
+  Icon,
+  ListItem,
+  Text,
+  UnorderedList,
+} from '@chakra-ui/react';
 import { DefaultHeading } from './DefaultHeading';
+import { RoundOne, RoundTwo } from './Icons';
 
 export const Rounds = () => {
   return (
@@ -21,14 +30,21 @@ export const Rounds = () => {
         The hackathon is divided into 2 rounds:
       </Text>
       <Box mt='16' mb='12'>
-        <Heading
-          size='xl'
-          lineHeight='short'
-          fontWeight='extrabold'
-          color='defaultHeading'
-        >
-          Round One (elimination round)
-        </Heading>
+        <HStack spacing='4'>
+          <Icon
+            width='auto'
+            as={RoundOne}
+            fontSize={{ base: '2rem', lg: '2.5rem' }}
+          />
+          <Heading
+            size='xl'
+            lineHeight='short'
+            fontWeight='extrabold'
+            color='defaultHeading'
+          >
+            Round One (elimination round)
+          </Heading>
+        </HStack>
         <Text
           pt='4'
           lineHeight='tall'
@@ -86,14 +102,21 @@ export const Rounds = () => {
         </Box>
       </Box>
       <Box mb='16' mt='12'>
-        <Heading
-          size='xl'
-          lineHeight='short'
-          fontWeight='extrabold'
-          color='defaultHeading'
-        >
-          Round Two (final round)
-        </Heading>
+        <HStack spacing='4'>
+          <Icon
+            width='auto'
+            as={RoundTwo}
+            fontSize={{ base: '2rem', lg: '2.5rem' }}
+          />
+          <Heading
+            size='xl'
+            lineHeight='short'
+            fontWeight='extrabold'
+            color='defaultHeading'
+          >
+            Round Two (final round)
+          </Heading>
+        </HStack>
         <Text
           pt='4'
           lineHeight='tall'

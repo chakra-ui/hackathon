@@ -25,12 +25,12 @@ export const Header = () => {
       </Heading>
       <Box py='10'>
         <Text color='defaultBody' lineHeight='tall'>
-          Join us for the first ever Chakra UI Hackathon! The goal of this
+          Join us for the first ever <b>Chackrathon</b>! The goal of this
           Hakcathon is to drive community engagement and foster collaboration in
           the ecosystem. If you are a designer or developer that is interested
           in component design and building, this is a good event for you to
-          engage, learn, and contribute to Chakra UI. This event will run from
-          May 9th until May 19th, 2022.
+          engage, learn, and contribute to Chakra UI. This event will run from{' '}
+          <b>May 9th</b> until <b>May 19th</b>, 2022.
         </Text>
       </Box>
       <Center py='4'>

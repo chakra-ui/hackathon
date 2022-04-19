@@ -19,7 +19,7 @@ export const TimelineItem = (props: TimelineItemProp) => {
       direction={{ base: 'column', lg: 'row' }}
       spacing={{ base: '4', lg: '32' }}
     >
-      <HStack {...rest} spacing='8'>
+      <HStack {...rest} spacing={{ base: '4', lg: '8' }}>
         <Icon
           width='auto'
           as={Check}

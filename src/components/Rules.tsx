@@ -11,7 +11,7 @@ interface RuleItemProps {
 const RuleItem = (props: RuleItemProps) => {
   const { title, description, ...rest } = props;
   return (
-    <HStack {...rest} spacing='8' alignItems='start'>
+    <HStack {...rest} spacing={{ base: '4', lg: '8' }} alignItems='start'>
       <Icon
         width='auto'
         as={Check}

@@ -60,7 +60,7 @@ export const Timer = () => {
   return (
     <Box bg='countdownBg' color='countdownText' borderRadius='lg' py='4' px='8'>
       <Text pb='4'>Registration opens in:</Text>
-      <HStack spacing='16' px='6'>
+      <HStack spacing={{ base: '8', lg: '16' }} px='6'>
         <TimeUnit value={days} label='days' />
         <TimeUnit value={hours} label='hours' />
         <TimeUnit value={minutes} label='minutes' />

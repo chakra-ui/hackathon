@@ -68,12 +68,15 @@ export const Goal = () => {
           mx='auto'
           px={{ base: '6', md: '8' }}
           position='relative'
-          top='-20'
+          top={{ base: '-24', lg: '-20' }}
         >
-          <SimpleGrid spacing='14' columns={{ base: 1, lg: 2 }}>
+          <SimpleGrid
+            spacing={{ base: '8', lg: '14' }}
+            columns={{ base: 1, lg: 2 }}
+          >
             <GoalDescription>
-              Each team should comprise a minimum of 2 individuals and maximum
-              of 3 individuals.
+              Registration is on a team basis and not per individual. This means
+              that to be a part of the hackathon, you should register as a team.
             </GoalDescription>
             <GoalDescription>
               All communication will be done via the #Chakrathon channel on

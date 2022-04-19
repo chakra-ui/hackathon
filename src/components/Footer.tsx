@@ -1,6 +1,6 @@
 import { Box, Icon, Link, Text } from '@chakra-ui/react';
 import * as React from 'react';
-import { ChakraLogo } from './Icons';
+import { ChakrathonLogo } from './Icons';
 
 export const Footer = () => {
   return (
@@ -16,7 +16,7 @@ export const Footer = () => {
           <Icon
             width='auto'
             color='white'
-            as={ChakraLogo}
+            as={ChakrathonLogo}
             fontSize={{ base: '1.5rem', lg: '2rem' }}
           />
         </Box>

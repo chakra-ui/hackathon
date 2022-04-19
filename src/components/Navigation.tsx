@@ -11,7 +11,7 @@ import {
   useColorMode,
 } from '@chakra-ui/react';
 import * as React from 'react';
-import { ChakraLogo } from './Icons';
+import { ChakrathonLogo } from './Icons';
 import { MoonIcon, SunIcon } from '@chakra-ui/icons';
 
 export const Navigation = () => {
@@ -59,7 +59,7 @@ export const Navigation = () => {
           <HStack spacing='10' justify='space-between' px='8'>
             <Icon
               width='auto'
-              as={ChakraLogo}
+              as={ChakrathonLogo}
               color='defaultHeading'
               fontSize={{ base: '2rem', lg: '2.5rem' }}
             />

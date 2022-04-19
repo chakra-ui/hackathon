@@ -6,6 +6,7 @@ export default class Document extends NextDocument {
     return (
       <Html lang='en'>
         <Head />
+        <link rel='icon' type='image/png' sizes='96x96' href='/favicon.png' />
         <body>
           <ColorModeScript />
           <Main />

@@ -13,10 +13,20 @@ import {
 import * as React from 'react';
 import { ChakrathonLogo } from './Icons';
 import { MoonIcon, SunIcon } from '@chakra-ui/icons';
+import { useViewportScroll } from 'framer-motion';
 
 export const Navigation = () => {
   const isDesktop = useBreakpointValue({ base: false, lg: true });
   const { toggleColorMode, colorMode } = useColorMode();
+
+  const ref = React.useRef<HTMLHeadingElement>();
+  const [y, setY] = React.useState(0);
+  const { height = 0 } = ref.current?.getBoundingClientRect() ?? {};
+
+  const { scrollY } = useViewportScroll();
+  React.useEffect(() => {
+    return scrollY.onChange(() => setY(scrollY.get()));
+  }, [scrollY]);
 
   const NavItems = [
     {
@@ -45,11 +55,13 @@ export const Navigation = () => {
     <Box as='section' pb={{ base: '12', md: '24' }}>
       <Box
         as='nav'
-        boxShadow='base'
         bg='defaultBg'
         position='fixed'
         w='100%'
         zIndex='1'
+        ref={ref}
+        shadow={y > height ? 'base' : undefined}
+        transition='box-shadow 0.2s, background-color 0.2s'
       >
         <Box
           py={{ base: '4', lg: '5' }}

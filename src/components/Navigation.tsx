@@ -102,7 +102,13 @@ export const Navigation = () => {
                   onClick={toggleColorMode}
                   icon={colorMode === 'light' ? <MoonIcon /> : <SunIcon />}
                 />
-                <Button colorScheme='teal' ml='4'>
+                <Button
+                  colorScheme='teal'
+                  ml='4'
+                  as='a'
+                  href='https://docs.google.com/forms/d/1TxLVq0IWRkmCv4z8Yf5DYm89OxDl5WyWPAexgZRX1WU/edit'
+                  target='_blank'
+                >
                   Register
                 </Button>
               </Flex>

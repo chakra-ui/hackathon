@@ -85,7 +85,7 @@ export const Prizes = () => (
       maxW='696px'
       mx='auto'
       justifyItems='center'
-      alignItems='baseline'
+      alignItems='end'
       py='8'
     >
       <PrizeCard

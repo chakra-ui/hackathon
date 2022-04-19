@@ -58,17 +58,14 @@ export const Timer = () => {
   });
 
   return (
-    <HStack
-      spacing='16'
-      bg='countdownBg'
-      color='countdownText'
-      p='6'
-      borderRadius='lg'
-    >
-      <TimeUnit value={days} label='days' />
-      <TimeUnit value={hours} label='hours' />
-      <TimeUnit value={minutes} label='minutes' />
-      <TimeUnit value={seconds} label='seconds' />
-    </HStack>
+    <Box bg='countdownBg' color='countdownText' borderRadius='lg' py='4' px='8'>
+      <Text pb='4'>Registration opens in:</Text>
+      <HStack spacing='16' px='6'>
+        <TimeUnit value={days} label='days' />
+        <TimeUnit value={hours} label='hours' />
+        <TimeUnit value={minutes} label='minutes' />
+        <TimeUnit value={seconds} label='seconds' />
+      </HStack>
+    </Box>
   );
 };

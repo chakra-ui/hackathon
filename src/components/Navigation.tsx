@@ -104,12 +104,13 @@ export const Navigation = () => {
                 />
                 <Button
                   colorScheme='teal'
+                  disabled
                   ml='4'
                   as='a'
                   href='https://docs.google.com/forms/d/1TxLVq0IWRkmCv4z8Yf5DYm89OxDl5WyWPAexgZRX1WU/edit'
                   target='_blank'
                 >
-                  Register
+                  Registeration opening May 3rd
                 </Button>
               </Flex>
             ) : (

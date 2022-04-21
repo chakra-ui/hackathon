@@ -21,12 +21,12 @@ export const Footer = () => {
           />
         </Box>
         <Text color='secondaryBody' lineHeight='tall'>
-          Chakrathon is oganized by volunteers, the maintainers of Chakra UI.
+          Chakrathon is organized by volunteers, the maintainers of Chakra UI.
           All funding come from corporate sponsors. The organizers are
           responsible for coordinating the Rules, Regulations, and Judging. For
           any questions and concerns related to the hackathon, reach out to{' '}
           <Link
-            color='teal'
+            color='teal.400'
             fontWeight='bold'
             href='mailto: chakrauilabs@gmail.com'
           >

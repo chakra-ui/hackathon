@@ -1,6 +1,41 @@
-import { Box, Heading, Stack, Text } from '@chakra-ui/react';
+import { Box, HStack, Icon, Stack, Text } from '@chakra-ui/react';
 import * as React from 'react';
-import { TimelineItem } from './Timeline';
+import { judgingCriteriaData } from '../data/data';
+import { DefaultHeading } from './DefaultHeading';
+import { Check } from './Icons';
+
+export interface CriteriaProp {
+  children: React.ReactNode;
+}
+
+export const CriteriaItem = (props: CriteriaProp) => {
+  const { children, ...rest } = props;
+
+  return (
+    <Stack
+      direction={{ base: 'column', lg: 'row' }}
+      spacing={{ base: '4', lg: '32' }}
+    >
+      <HStack {...rest} spacing={{ base: '4', lg: '8' }} alignItems='start'>
+        <Icon
+          width='auto'
+          as={Check}
+          fontSize={{ base: '2rem', lg: '2.5rem' }}
+          color='activeIcon'
+        />
+        <Text
+          lineHeight='tall'
+          color='defaultBody'
+          fontSize={{ base: 'xl', lg: '2xl' }}
+          fontWeight='medium'
+          minW='300px'
+        >
+          {children}
+        </Text>
+      </HStack>
+    </Stack>
+  );
+};
 
 export const Criteria = () => {
   return (
@@ -10,14 +45,7 @@ export const Criteria = () => {
         mx='auto'
         px={{ base: '6', md: '8' }}
       >
-        <Heading
-          size='2xl'
-          lineHeight='short'
-          fontWeight='extrabold'
-          color='defaultHeading'
-        >
-          Judging Criteria
-        </Heading>
+        <DefaultHeading> Judging Criteria</DefaultHeading>
         <Text
           pt='4'
           lineHeight='tall'
@@ -27,14 +55,9 @@ export const Criteria = () => {
           The teams will be judged based on the following criteria:
         </Text>
         <Stack spacing={{ base: '8', lg: '12' }} py='16'>
-          <TimelineItem
-            isActive
-            description='Ease of customization with style props'
-          />
-          <TimelineItem isActive description='The number of variations' />
-          <TimelineItem isActive description='The usage of style props' />
-          <TimelineItem isActive description='Proper documentation' />
-          <TimelineItem isActive description='Look and feel of component' />
+          {judgingCriteriaData.map((item, index) => {
+            return <CriteriaItem key={index}>{item}</CriteriaItem>;
+          })}
         </Stack>
       </Box>
     </Box>

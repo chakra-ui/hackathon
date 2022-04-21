@@ -1,22 +1,25 @@
-import { HStack, Icon, Stack, Text, Box, Heading } from '@chakra-ui/react';
-import * as React from 'react';
+import { Box, HStack, Icon, Stack, Text } from '@chakra-ui/react';
+import { timelineData } from '../data/data';
+import { DefaultHeading } from './DefaultHeading';
 import { Check } from './Icons';
 
 export interface TimelineItemProp {
-  description: string;
-  info?: string;
+  date: string;
+  description?: string;
   isActive: boolean;
 }
 
 export const TimelineItem = (props: TimelineItemProp) => {
-  const { description, info, isActive, ...rest } = props;
+  const { date, description, isActive: defaultIsActive, ...rest } = props;
+  const isPast = new Date() >= new Date(date);
+  const isActive = defaultIsActive || isPast;
 
   return (
     <Stack
       direction={{ base: 'column', lg: 'row' }}
       spacing={{ base: '4', lg: '32' }}
     >
-      <HStack {...rest} spacing='8'>
+      <HStack {...rest} spacing={{ base: '4', lg: '8' }}>
         <Icon
           width='auto'
           as={Check}
@@ -30,7 +33,7 @@ export const TimelineItem = (props: TimelineItemProp) => {
           fontWeight='medium'
           minW='300px'
         >
-          {description}
+          {date}
         </Text>
       </HStack>
       <Text
@@ -40,7 +43,7 @@ export const TimelineItem = (props: TimelineItemProp) => {
         fontWeight='medium'
         textAlign='left'
       >
-        {info}
+        {description}
       </Text>
     </Stack>
   );
@@ -48,72 +51,25 @@ export const TimelineItem = (props: TimelineItemProp) => {
 
 export const Timeline = () => {
   return (
-    <Box bg='alternativeBg' as='section' py='20'>
+    <Box bg='defaultBg' as='section' py='20' id='timeline'>
       <Box
         maxW={{ base: 'xl', md: '7xl' }}
         mx='auto'
         px={{ base: '6', md: '8' }}
         py='8'
       >
-        <Heading
-          size='2xl'
-          lineHeight='short'
-          fontWeight='extrabold'
-          color='defaultHeading'
-        >
-          Timeline
-        </Heading>
+        <DefaultHeading>Timeline</DefaultHeading>
         <Stack spacing={{ base: '20', lg: '12' }} my='20'>
-          <TimelineItem
-            isActive
-            description='May 3rd @ 12 noon GMT'
-            info='Team Registration opens'
-          />
-          <TimelineItem
-            isActive={false}
-            description='May 5th @ 12 noon GMT'
-            info='Team Registration closes'
-          />
-          <TimelineItem
-            isActive={false}
-            description='May 6th'
-            info='Hackathon Introduction and Structure (YouTube)'
-          />
-          <TimelineItem
-            isActive={false}
-            description='May 6th'
-            info='Teams join the Discord Channel + Engagement'
-          />
-          <TimelineItem
-            isActive={false}
-            description='May 9th'
-            info='Start hacking!'
-          />
-          <TimelineItem
-            isActive={false}
-            description='May 9th - May 11th'
-            info='Elimination Round'
-          />
-          <TimelineItem
-            isActive={false}
-            description='May 12th'
-            info='Announcing teams moving to the next stage'
-          />
-          <TimelineItem
-            isActive={false}
-            description='May 12th - May 18th'
-            info='Final Round'
-          />
-          <TimelineItem
-            isActive={false}
-            description='May 19th'
-            info='Team Presentations & Judging'
-          />
-          <TimelineItem
-            isActive={false}
-            description='May 19th'
-            info='Winners announced!'
-          />
+          {timelineData.map((item, index) => {
+            return (
+              <TimelineItem
+                isActive={index == 0}
+                key={index}
+                description={item.description}
+                date={item.date}
+              />
+            );
+          })}
         </Stack>
       </Box>
     </Box>

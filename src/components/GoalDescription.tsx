@@ -1,4 +1,4 @@
-import { Box, Text, useColorModeValue as mode } from '@chakra-ui/react';
+import { Box, Text } from '@chakra-ui/react';
 import * as React from 'react';
 
 interface GoalDescriptionProps {

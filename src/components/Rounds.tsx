@@ -1,24 +1,26 @@
-import { Box, Heading, ListItem, Text, UnorderedList } from '@chakra-ui/react';
-import * as React from 'react';
+import {
+  Box,
+  Heading,
+  HStack,
+  Icon,
+  ListItem,
+  Text,
+  UnorderedList,
+} from '@chakra-ui/react';
+import { DefaultHeading } from './DefaultHeading';
+import { RoundOne, RoundTwo } from './Icons';
 
 export const Rounds = () => {
   return (
     <Box
       as='section'
-      bg='defaultBg'
+      id='rounds'
       maxW={{ base: 'xl', md: '7xl' }}
       mx='auto'
       px={{ base: '6', md: '8' }}
       py='20'
     >
-      <Heading
-        size='2xl'
-        lineHeight='short'
-        fontWeight='extrabold'
-        color='defaultHeading'
-      >
-        The rounds
-      </Heading>
+      <DefaultHeading>The Rounds</DefaultHeading>
       <Text
         pt='4'
         lineHeight='tall'
@@ -28,14 +30,21 @@ export const Rounds = () => {
         The hackathon is divided into 2 rounds:
       </Text>
       <Box mt='16' mb='12'>
-        <Heading
-          size='xl'
-          lineHeight='short'
-          fontWeight='extrabold'
-          color='defaultHeading'
-        >
-          Round One (elimination round)
-        </Heading>
+        <HStack spacing='4'>
+          <Icon
+            width='auto'
+            as={RoundOne}
+            fontSize={{ base: '2rem', lg: '2.5rem' }}
+          />
+          <Heading
+            size='xl'
+            lineHeight='short'
+            fontWeight='extrabold'
+            color='defaultHeading'
+          >
+            Round One (Elimination round)
+          </Heading>
+        </HStack>
         <Text
           pt='4'
           lineHeight='tall'
@@ -69,7 +78,7 @@ export const Rounds = () => {
                 Create a 3-5 minute video describing the API design and the
                 approach to tackling this challenge.
               </ListItem>
-              <ListItem>Upload this video to Google Drive [Link here]</ListItem>
+              <ListItem>Upload video to Google Drive </ListItem>
             </UnorderedList>
           </Box>
           <Text
@@ -93,14 +102,21 @@ export const Rounds = () => {
         </Box>
       </Box>
       <Box mb='16' mt='12'>
-        <Heading
-          size='xl'
-          lineHeight='short'
-          fontWeight='extrabold'
-          color='defaultHeading'
-        >
-          Round Two (final round)
-        </Heading>
+        <HStack spacing='4'>
+          <Icon
+            width='auto'
+            as={RoundTwo}
+            fontSize={{ base: '2rem', lg: '2.5rem' }}
+          />
+          <Heading
+            size='xl'
+            lineHeight='short'
+            fontWeight='extrabold'
+            color='defaultHeading'
+          >
+            Round Two (Final round)
+          </Heading>
+        </HStack>
         <Text
           pt='4'
           lineHeight='tall'
@@ -127,7 +143,8 @@ export const Rounds = () => {
         >
           <Text>Mode of submission:</Text>
           <UnorderedList>
-            <ListItem>Push all commits to GitHub and submit</ListItem>
+            <ListItem>Provide a link to the GitHub Repo</ListItem>
+            <ListItem>Present your solution to the Judges</ListItem>
           </UnorderedList>
         </Box>
       </Box>

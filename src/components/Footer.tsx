@@ -1,5 +1,6 @@
-import { Box, Link, Text } from '@chakra-ui/react';
+import { Box, Icon, Link, Text } from '@chakra-ui/react';
 import * as React from 'react';
+import { ChakrathonLogo } from './Icons';
 
 export const Footer = () => {
   return (
@@ -7,10 +8,18 @@ export const Footer = () => {
       as='footer'
       bg='secondaryBg'
       px={{ base: '6', md: '8' }}
-      py='20'
+      py='10'
       textAlign={{ base: 'left', lg: 'center' }}
     >
       <Box maxW={{ base: 'xl', md: '2xl' }} mx='auto'>
+        <Box py='4'>
+          <Icon
+            width='auto'
+            color='white'
+            as={ChakrathonLogo}
+            fontSize={{ base: '1.5rem', lg: '2rem' }}
+          />
+        </Box>
         <Text color='secondaryBody' lineHeight='tall'>
           Chakrathon is oganized by volunteers, the maintainers of Chakra UI.
           All funding come from corporate sponsors. The organizers are

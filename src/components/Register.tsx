@@ -1,5 +1,4 @@
 import { Box, Button, Heading, Text } from '@chakra-ui/react';
-import * as React from 'react';
 
 export const Register = () => {
   return (
@@ -28,7 +27,15 @@ export const Register = () => {
         <Text py='4' lineHeight='tall' color='defaultBody' fontSize='lg'>
           We would love to see what wonderful component design you come up with!
         </Text>
-        <Button mt='8' mb="4" size='lg' as='a' colorScheme='teal' href='#'>
+        <Button
+          mt='8'
+          mb='4'
+          size='lg'
+          as='a'
+          colorScheme='teal'
+          href='https://docs.google.com/forms/d/1TxLVq0IWRkmCv4z8Yf5DYm89OxDl5WyWPAexgZRX1WU/edit'
+          target='_blank'
+        >
           Register
         </Button>
       </Box>

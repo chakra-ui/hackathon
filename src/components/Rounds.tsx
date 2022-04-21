@@ -42,7 +42,7 @@ export const Rounds = () => {
             fontWeight='extrabold'
             color='defaultHeading'
           >
-            Round One (elimination round)
+            Round One (Elimination round)
           </Heading>
         </HStack>
         <Text
@@ -78,7 +78,7 @@ export const Rounds = () => {
                 Create a 3-5 minute video describing the API design and the
                 approach to tackling this challenge.
               </ListItem>
-              <ListItem>Upload this video to Google Drive [Link here]</ListItem>
+              <ListItem>Upload video to Google Drive </ListItem>
             </UnorderedList>
           </Box>
           <Text
@@ -114,7 +114,7 @@ export const Rounds = () => {
             fontWeight='extrabold'
             color='defaultHeading'
           >
-            Round Two (final round)
+            Round Two (Final round)
           </Heading>
         </HStack>
         <Text
@@ -143,7 +143,8 @@ export const Rounds = () => {
         >
           <Text>Mode of submission:</Text>
           <UnorderedList>
-            <ListItem>Push all commits to GitHub and submit</ListItem>
+            <ListItem>Provide a link to the GitHub Repo</ListItem>
+            <ListItem>Present your solution to the Judges</ListItem>
           </UnorderedList>
         </Box>
       </Box>

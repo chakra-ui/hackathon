@@ -91,7 +91,7 @@ export const Prizes = () => (
       <PrizeCard
         icon={SecondPosition}
         name='Second Place'
-        prize='$200'
+        prize='$750'
         bg='whiteAlpha.200'
         maxW='md'
         paddingTop='8'
@@ -100,7 +100,7 @@ export const Prizes = () => (
       <PrizeCard
         icon={FirstPosition}
         name='First Place'
-        prize='$200'
+        prize='$1500'
         bg='whiteAlpha.300'
         maxW='md'
         paddingTop='16'
@@ -109,7 +109,7 @@ export const Prizes = () => (
       <PrizeCard
         icon={ThirdPosition}
         name='Third Place'
-        prize='$200'
+        prize='$500'
         bg='whiteAlpha.200'
         maxW='md'
         paddingTop='8'

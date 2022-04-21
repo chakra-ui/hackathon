@@ -25,8 +25,7 @@ export const rulesData = [
   },
   {
     title: 'Awards',
-    description:
-      'Prizes will be awarded to participants via PayPal and/or OpenCollective.',
+    description: 'Prizes will be awarded to participants via OpenCollective.',
   },
   {
     title: 'On time',

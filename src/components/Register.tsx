@@ -37,7 +37,7 @@ export const Register = () => {
           target='_blank'
           disabled
         >
-          Registeration opening May 3rd
+          Registration opening May 3rd
         </Button>
       </Box>
     </Box>

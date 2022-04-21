@@ -110,7 +110,7 @@ export const Navigation = () => {
                   href='https://docs.google.com/forms/d/1TxLVq0IWRkmCv4z8Yf5DYm89OxDl5WyWPAexgZRX1WU/edit'
                   target='_blank'
                 >
-                  Registeration opening May 3rd
+                  Registration opening May 3rd
                 </Button>
               </Flex>
             ) : (

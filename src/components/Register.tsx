@@ -35,8 +35,9 @@ export const Register = () => {
           colorScheme='teal'
           href='https://docs.google.com/forms/d/1TxLVq0IWRkmCv4z8Yf5DYm89OxDl5WyWPAexgZRX1WU/edit'
           target='_blank'
+          disabled
         >
-          Register
+          Registration opening May 3rd
         </Button>
       </Box>
     </Box>

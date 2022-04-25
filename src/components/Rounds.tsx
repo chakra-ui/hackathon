@@ -144,7 +144,11 @@ export const Rounds = () => {
           <Text>Mode of submission:</Text>
           <UnorderedList>
             <ListItem>Provide a link to the GitHub Repo</ListItem>
-            <ListItem>Present your solution to the Judges</ListItem>
+            <ListItem>
+              Create a 3-5 minute video describing your component, documentation
+              and process
+            </ListItem>
+            <ListItem>Upload video to Google Drive </ListItem>
           </UnorderedList>
         </Box>
       </Box>

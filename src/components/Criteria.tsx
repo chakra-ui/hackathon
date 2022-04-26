@@ -16,7 +16,12 @@ export const CriteriaItem = (props: CriteriaProp) => {
       direction={{ base: 'column', lg: 'row' }}
       spacing={{ base: '4', lg: '32' }}
     >
-      <HStack {...rest} spacing={{ base: '4', lg: '8' }} alignItems='start'>
+      <HStack
+        {...rest}
+        spacing={{ base: '4', lg: '8' }}
+        alignItems='start'
+        minW={{ base: '0', lg: '300px' }}
+      >
         <Icon
           width='auto'
           as={Check}
@@ -28,7 +33,6 @@ export const CriteriaItem = (props: CriteriaProp) => {
           color='defaultBody'
           fontSize={{ base: 'xl', lg: '2xl' }}
           fontWeight='medium'
-          minW='300px'
         >
           {children}
         </Text>

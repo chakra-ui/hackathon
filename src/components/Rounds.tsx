@@ -30,14 +30,14 @@ export const Rounds = () => {
         The hackathon is divided into 2 rounds:
       </Text>
       <Box mt='16' mb='12'>
-        <HStack spacing='4'>
+        <HStack spacing='4' align='start'>
           <Icon
             width='auto'
             as={RoundOne}
             fontSize={{ base: '2rem', lg: '2.5rem' }}
           />
           <Heading
-            size='xl'
+            fontSize={{ base: '2xl', md: '4xl' }}
             lineHeight='short'
             fontWeight='extrabold'
             color='defaultHeading'
@@ -51,7 +51,7 @@ export const Rounds = () => {
           color='defaultBody'
           fontSize={{ base: 'lg', lg: 'xl' }}
         >
-          9th to 11th May, 2022
+          🗓 May 9th - May 11th, 2022
         </Text>
         <Box py='4'>
           <Text
@@ -102,14 +102,14 @@ export const Rounds = () => {
         </Box>
       </Box>
       <Box mb='16' mt='12'>
-        <HStack spacing='4'>
+        <HStack spacing='4' align='start'>
           <Icon
             width='auto'
             as={RoundTwo}
             fontSize={{ base: '2rem', lg: '2.5rem' }}
           />
           <Heading
-            size='xl'
+            fontSize={{ base: '2xl', md: '4xl' }}
             lineHeight='short'
             fontWeight='extrabold'
             color='defaultHeading'
@@ -123,7 +123,7 @@ export const Rounds = () => {
           color='defaultBody'
           fontSize={{ base: 'lg', lg: 'xl' }}
         >
-          12th to 18th May, 2022
+          🗓 May 12th - May 18th, 2022
         </Text>
         <Text
           pt='4'

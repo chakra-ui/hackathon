@@ -1,4 +1,4 @@
-import { Box, HStack, Icon, Stack, Text } from '@chakra-ui/react';
+import { Box, HStack, Icon, Spacer, Stack, Text } from '@chakra-ui/react';
 import { timelineData } from '../data/data';
 import { DefaultHeading } from './DefaultHeading';
 import { Check } from './Icons';
@@ -19,7 +19,11 @@ export const TimelineItem = (props: TimelineItemProp) => {
       direction={{ base: 'column', lg: 'row' }}
       spacing={{ base: '4', lg: '32' }}
     >
-      <HStack {...rest} spacing={{ base: '4', lg: '8' }}>
+      <HStack
+        {...rest}
+        spacing={{ base: '4', lg: '8' }}
+        minW={{ base: '0', lg: '300px' }}
+      >
         <Icon
           width='auto'
           as={Check}
@@ -31,11 +35,11 @@ export const TimelineItem = (props: TimelineItemProp) => {
           color={isActive ? 'defaultBody' : 'muted'}
           fontSize={{ base: 'xl', lg: '2xl' }}
           fontWeight='medium'
-          minW='300px'
         >
           {date}
         </Text>
       </HStack>
+
       <Text
         lineHeight='tall'
         color={isActive ? 'defaultBody' : 'muted'}

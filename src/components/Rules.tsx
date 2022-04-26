@@ -27,7 +27,7 @@ const RuleItem = (props: RuleItemProps) => {
         >
           {title}
         </Text>
-        <Text lineHeight='tall' color='defaultBody' minW='300px'>
+        <Text lineHeight='tall' color='defaultBody'>
           {description}
         </Text>
       </Stack>

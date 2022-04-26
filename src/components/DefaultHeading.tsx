@@ -1,11 +1,6 @@
-import { Heading } from '@chakra-ui/react';
+import { Heading, HeadingProps } from '@chakra-ui/react';
 
-interface DefaultHeadingProps {
-  children: React.ReactNode;
-}
-
-export const DefaultHeading = (props: DefaultHeadingProps) => {
-  const { children } = props;
+export const DefaultHeading = (props: HeadingProps) => {
   return (
     <Heading
       size='2xl'
@@ -17,8 +12,7 @@ export const DefaultHeading = (props: DefaultHeadingProps) => {
       display='inline-block'
       p='4'
       borderRadius='lg'
-    >
-      {children}
-    </Heading>
+      {...props}
+    />
   );
 };

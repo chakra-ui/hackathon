@@ -20,15 +20,19 @@ export const Footer = () => {
             fontSize={{ base: '1.5rem', lg: '2rem' }}
           />
         </Box>
-        <Text color='secondaryBody' lineHeight='tall'>
-          Chakrathon is organized by volunteers, the maintainers of Chakra UI.
-          All funding come from corporate sponsors. The organizers are
-          responsible for coordinating the Rules, Regulations, and Judging. For
-          any questions and concerns related to the hackathon, reach out to{' '}
+        <Text
+          color='secondaryBody'
+          lineHeight='tall'
+          fontSize='sm'
+          opacity={0.7}
+        >
+          Chakrathon is organized by the maintainers of Chakra UI. The
+          organizers are responsible for coordinating the rules and judging. For
+          any questions and concerns, reach out to{' '}
           <Link
             color='teal.400'
             fontWeight='bold'
-            href='mailto: chakrauilabs@gmail.com'
+            href='mailto:chakrauilabs@gmail.com'
           >
             chakrauilabs@gmail.com
           </Link>

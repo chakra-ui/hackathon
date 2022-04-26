@@ -205,8 +205,8 @@ export const RoundTwo = (props: HTMLChakraProps<'svg'>) => (
 
 export const ChakrathonLogo = (props: HTMLChakraProps<'svg'>) => (
   <chakra.svg
-    width='182'
-    height='32'
+    width='182px'
+    height='32px'
     viewBox='0 0 182 32'
     fill='currentColor'
     {...props}

@@ -1,22 +1,46 @@
+import { MoonIcon, SunIcon } from '@chakra-ui/icons';
 import {
   Box,
-  Button,
-  ButtonGroup,
   Flex,
   HStack,
   Icon,
   IconButton,
+  Link,
   Spacer,
   useBreakpointValue,
-  useColorMode,
+  useColorMode
 } from '@chakra-ui/react';
+import { useViewportScroll } from 'framer-motion';
 import * as React from 'react';
 import { ChakrathonLogo } from './Icons';
-import { MoonIcon, SunIcon } from '@chakra-ui/icons';
-import { useViewportScroll } from 'framer-motion';
+import { RegisterButton } from './RegisterButton';
+
+const navItems = [
+  {
+    nav: 'About',
+    link: '#about',
+  },
+  {
+    nav: 'Rounds',
+    link: '#rounds',
+  },
+  {
+    nav: 'Rules',
+    link: '#rules',
+  },
+  {
+    nav: 'Prizes',
+    link: '#prizes',
+  },
+  {
+    nav: 'Timeline',
+    link: '#timeline',
+  },
+];
 
 export const Navigation = () => {
   const isDesktop = useBreakpointValue({ base: false, lg: true });
+
   const { toggleColorMode, colorMode } = useColorMode();
 
   const ref = React.useRef<HTMLHeadingElement>();
@@ -24,32 +48,10 @@ export const Navigation = () => {
   const { height = 0 } = ref.current?.getBoundingClientRect() ?? {};
 
   const { scrollY } = useViewportScroll();
+
   React.useEffect(() => {
     return scrollY.onChange(() => setY(scrollY.get()));
   }, [scrollY]);
-
-  const NavItems = [
-    {
-      nav: 'About',
-      link: '#about',
-    },
-    {
-      nav: 'Rounds',
-      link: '#rounds',
-    },
-    {
-      nav: 'Rules',
-      link: '#rules',
-    },
-    {
-      nav: 'Prizes',
-      link: '#prizes',
-    },
-    {
-      nav: 'Timeline',
-      link: '#timeline',
-    },
-  ];
 
   return (
     <Box as='section' pb={{ base: '12', md: '24' }}>
@@ -77,41 +79,36 @@ export const Navigation = () => {
             />
             {isDesktop ? (
               <Flex justify='space-between' flex='1'>
-                <ButtonGroup variant='link' spacing='8'>
-                  {NavItems.map((item, index) => (
-                    <Button
-                      as='a'
+                <HStack as='nav' aria-label='Quick links' spacing='8'>
+                  {navItems.map((item, index) => (
+                    <Link
                       href={item.link}
                       key={index}
                       textDecoration='none'
+                      fontWeight='medium'
+                      rounded='sm'
                       _hover={{
                         textDecoration: 'none',
                         color: 'teal.400',
                       }}
                     >
                       {item.nav}
-                    </Button>
+                    </Link>
                   ))}
-                </ButtonGroup>
+                </HStack>
+
                 <Spacer />
+
                 <IconButton
                   variant='outline'
                   colorScheme='teal'
                   aria-label='Switch color mode'
-                  fontSize='16px'
                   onClick={toggleColorMode}
                   icon={colorMode === 'light' ? <MoonIcon /> : <SunIcon />}
+                  mr='4'
                 />
-                <Button
-                  colorScheme='teal'
-                  disabled
-                  ml='4'
-                  as='a'
-                  href='https://docs.google.com/forms/d/1TxLVq0IWRkmCv4z8Yf5DYm89OxDl5WyWPAexgZRX1WU/edit'
-                  target='_blank'
-                >
-                  Registration opening May 3rd
-                </Button>
+
+                <RegisterButton />
               </Flex>
             ) : (
               <IconButton

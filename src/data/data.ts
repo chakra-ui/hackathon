@@ -2,7 +2,7 @@ export const rulesData = [
   {
     title: 'Comms',
     description:
-      'All communication will be done via the #Chakrathon channel on Discord, so we encourage teams and team members to join the channel.',
+      'All communication will be done via the #Chakrathon channel on Discord. We encourage teams and team members to join the channel.',
   },
   {
     title: 'License',
@@ -41,51 +41,62 @@ export const rulesData = [
 export const timelineData = [
   {
     date: 'May 3rd',
+    isoDate: '05-03-2022',
     description: 'Team Registration opens',
     isActive: true,
   },
   {
     date: 'May 5th',
+    isoDate: '05-05-2022',
     description: 'Team Registration closes',
   },
   {
     date: 'May 6th',
+    isoDate: '05-06-2022',
     description: 'Hackathon Introduction and Structure (YouTube)',
   },
   {
     date: 'May 6th',
+    isoDate: '05-06-2022',
     description: 'Teams join the Discord Channel + Engagement',
   },
   {
     date: 'May 9th',
+    isoDate: '05-09-2022',
     description: 'Start hacking!',
   },
   {
     date: 'May 9th - May 11th',
+    isoDate: '05-11-2022',
     description: 'Elimination Round',
   },
   {
     date: 'May 12th',
+    isoDate: '05-12-2022',
     description: 'Announcing teams moving to the next stage',
   },
   {
     date: 'May 12th - May 18th',
+    isoDate: '05-18-2022',
     description: 'Final Round',
   },
   {
     date: 'May 19th',
-    description: 'Team Presentations & Judging',
+    isoDate: '05-19-2022',
+    description: 'Review of video submission',
   },
   {
     date: 'May 19th',
+    isoDate: '05-19-2022',
     description: 'Winners announced!',
   },
 ];
 
 export const judgingCriteriaData = [
+  'Accessibility considerations',
+  'Component hook and API design',
   'Ease of customization with style props',
-  'The number of variations',
-  'The usage of style props',
+  'Theming and variants',
   'Proper documentation',
-  'Look and feel of component',
+  'Component UI design',
 ];

@@ -12,25 +12,40 @@ export const Header = () => {
       py='20'
       textAlign='center'
     >
-      <Box fontSize={{ base: '3xl', lg: '6xl' }} pb='4'>
-        🚀
-      </Box>
+      <Text textTransform='uppercase' fontWeight='semibold' color='accentText'>
+        May 3rd - May 19th 2022
+      </Text>
+
       <Heading
-        size='2xl'
-        lineHeight='short'
+        mt='6'
+        fontSize={{ base: '4rem', md: '6rem' }}
+        lineHeight='1'
         fontWeight='extrabold'
+        letterSpacing='tight'
         color='defaultHeading'
+        sx={{
+          span: {
+            display: 'block',
+            i: {
+              fontSize: '0.8em',
+            },
+          },
+        }}
       >
-        Ready, Set, Build!
+        <span>
+          Ready <i>🚀</i>
+        </span>
+        <span>
+          Set <i>⚡️</i>
+        </span>
+        <span>
+          Build <i>🛠</i>
+        </span>
       </Heading>
       <Box py='10'>
-        <Text color='defaultBody' lineHeight='tall'>
-          Join us for the first ever <b>Chakrathon</b>! The goal of this
-          Hackathon is to drive community engagement and foster collaboration in
-          the ecosystem. If you are a designer or developer that is interested
-          in component design and building, this is a good event for you to
-          engage, learn, and contribute to Chakra UI. This event will run from{' '}
-          <b>May 9th</b> until <b>May 19th</b>, 2022.
+        <Text color='defaultBody' fontSize='lg' lineHeight='tall'>
+          Join us for the first ever <b>Chakrathon</b> to build the next best
+          component in Chakra UI. Come engage, learn, and contribute.
         </Text>
       </Box>
       <Center py='4'>

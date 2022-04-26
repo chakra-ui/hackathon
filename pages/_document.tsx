@@ -7,6 +7,11 @@ export default class Document extends NextDocument {
       <Html lang='en'>
         <Head />
         <link rel='icon' type='image/png' sizes='96x96' href='/favicon.png' />
+        <script
+          defer
+          data-domain='hackathon.chakra-ui.com'
+          src='https://plausible.io/js/plausible.js'
+        />
         <body>
           <ColorModeScript />
           <Main />

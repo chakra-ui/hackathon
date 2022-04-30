@@ -1,5 +1,6 @@
 import { Box, Center, Heading, Text } from '@chakra-ui/react';
 import * as React from 'react';
+import { RegisterButton } from './RegisterButton';
 import { Timer } from './Timer';
 
 export const Header = () => {
@@ -47,6 +48,9 @@ export const Header = () => {
           Join us for the first ever <b>Chakrathon</b> to build the next best
           component in Chakra UI. Come engage, learn, and contribute.
         </Text>
+        <Box display={{ lg: 'none' }} mt='5'>
+          <RegisterButton />
+        </Box>
       </Box>
       <Center py='4'>
         <Timer />

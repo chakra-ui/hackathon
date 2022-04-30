@@ -5,35 +5,30 @@ import {
   Stack,
   Text,
   Box,
+  HStack,
 } from '@chakra-ui/react';
 import * as logos from './Logos';
 
 export const LogoGrid = () => (
-  <Box bg='alternativeBg'>
+  <Box>
     <Container maxW='container.xl' py={{ base: '12', md: '20' }}>
-      <Stack spacing='8'>
+      <Stack spacing='8' align='center' px={{ base: '6', md: '8' }}>
         <Text
-          fontSize={{ base: 'md', md: '3xl' }}
+          fontSize={{ base: 'md', md: '2xl' }}
           fontWeight='bold'
           textAlign='center'
           color='defaultHeading'
         >
           Sponsored by
         </Text>
-        <SimpleGrid
-          gap={{ base: '4', md: '6' }}
-          columns={{ base: 2, md: 3, lg: 6 }}
+        <Stack
+          direction={{ base: 'column', sm: 'row' }}
+          spacing={{ base: '8', sm: '12', lg: '24' }}
         >
           {Object.entries(logos).map(([name, Logo]) => (
-            <Center key={name}>
-              <Logo
-                h={{ base: '8', md: '12' }}
-                maxW='180px'
-                fill='emphasized'
-              />
-            </Center>
+            <Logo key={name} h={{ base: '8', md: '12' }} fill='emphasized' />
           ))}
-        </SimpleGrid>
+        </Stack>
       </Stack>
     </Container>
   </Box>

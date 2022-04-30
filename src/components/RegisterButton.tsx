@@ -10,6 +10,7 @@ export const RegisterButton = () => {
   if (!canRegister) {
     return (
       <Flex
+        display='inline-flex'
         align='center'
         px='4'
         bg='teal.100'

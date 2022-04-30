@@ -2,6 +2,7 @@ import { Criteria } from '../src/components/Criteria';
 import { Footer } from '../src/components/Footer';
 import { Goal } from '../src/components/Goal';
 import { Header } from '../src/components/Header';
+import { LogoGrid } from '../src/components/LogoGrid';
 import { Navigation } from '../src/components/Navigation';
 import { Prizes } from '../src/components/Prizes';
 import { Register } from '../src/components/Register';
@@ -14,6 +15,7 @@ export default function Home() {
     <div>
       <Navigation />
       <Header />
+      <LogoGrid />
       <Goal />
       <Rounds />
       <Rules />

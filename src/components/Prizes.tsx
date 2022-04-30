@@ -1,5 +1,6 @@
 import {
   Box,
+  BoxProps,
   Flex,
   Heading,
   Icon,
@@ -9,14 +10,10 @@ import {
 } from '@chakra-ui/react';
 import { FirstPosition, SecondPosition, ThirdPosition } from './Icons';
 
-export interface PrizeCardProps {
+export interface PrizeCardProps extends BoxProps {
   name: string;
   prize: string;
   icon: React.ElementType;
-  bg: string;
-  maxW: string;
-  paddingTop: string;
-  fontSize: string;
 }
 
 export const PrizeCard = (props: PrizeCardProps) => {
@@ -96,6 +93,7 @@ export const Prizes = () => (
         maxW='md'
         paddingTop='8'
         fontSize='6xl'
+        order={{ base: 1, lg: 0 }}
       />
       <PrizeCard
         icon={FirstPosition}
@@ -105,6 +103,7 @@ export const Prizes = () => (
         maxW='md'
         paddingTop='16'
         fontSize='7xl'
+        order={{ base: 0, lg: 1 }}
       />
       <PrizeCard
         icon={ThirdPosition}
@@ -114,6 +113,7 @@ export const Prizes = () => (
         maxW='md'
         paddingTop='8'
         fontSize='5xl'
+        order={2}
       />
     </SimpleGrid>
     <Text

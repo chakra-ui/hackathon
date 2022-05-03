@@ -12,6 +12,7 @@ export default class Document extends NextDocument {
           data-domain='hackathon.chakra-ui.com'
           src='https://plausible.io/js/plausible.js'
         />
+        <title>Chakrathon &apos;22</title>
         <body>
           <ColorModeScript />
           <Main />

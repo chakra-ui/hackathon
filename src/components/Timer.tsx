@@ -49,7 +49,7 @@ export const useTimer = (props: UseTimerProps) => {
 const getSecondsFromExpiry = (expire: number) =>
   Math.round((expire - new Date().getTime()) / 1000);
 
-const expiresInSeconds = new Date('05-06-2022').getTime();
+const expiresInSeconds = new Date('2022-05-06').getTime();
 
 //Timer
 export const Timer = () => {

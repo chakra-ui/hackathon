@@ -1,4 +1,14 @@
-import { Box, HStack, Icon, SimpleGrid, Stack, Text } from '@chakra-ui/react';
+import {
+  Box,
+  Button,
+  HStack,
+  Icon,
+  Link,
+  SimpleGrid,
+  Stack,
+  Text,
+  VStack,
+} from '@chakra-ui/react';
 import { DefaultHeading } from './DefaultHeading';
 import { Check } from './Icons';
 import { rulesData } from '../data/data';
@@ -38,29 +48,43 @@ const RuleItem = (props: RuleItemProps) => {
 export const Rules = () => {
   return (
     <Box bg='alternativeBg' as='section' id='rules'>
-      <Box
+      <VStack
+        alignItems='flex-start'
+        spacing={20}
         maxW={{ base: 'xl', md: '7xl' }}
         mx='auto'
         px={{ base: '6', md: '8' }}
         py='20'
       >
-        <DefaultHeading>The Rules</DefaultHeading>
-        <SimpleGrid
-          columns={{ base: 1, lg: 2 }}
-          spacing='8'
-          pt={{ base: '8', lg: '20' }}
+        <Box>
+          <DefaultHeading>The Rules</DefaultHeading>
+          <SimpleGrid
+            columns={{ base: 1, lg: 2 }}
+            spacing='8'
+            pt={{ base: '8', lg: '20' }}
+          >
+            {rulesData.map((item, index) => {
+              return (
+                <RuleItem
+                  key={index}
+                  title={item.title}
+                  description={item.description}
+                />
+              );
+            })}
+          </SimpleGrid>
+        </Box>
+        <Button
+          as={Link}
+          href='https://discord.gg/eeK8ZhkBXQ'
+          isExternal
+          colorScheme='teal'
+          alignSelf='center'
+          size='lg'
         >
-          {rulesData.map((item, index) => {
-            return (
-              <RuleItem
-                key={index}
-                title={item.title}
-                description={item.description}
-              />
-            );
-          })}
-        </SimpleGrid>
-      </Box>
+          Join our Discord server
+        </Button>
+      </VStack>
     </Box>
   );
 };

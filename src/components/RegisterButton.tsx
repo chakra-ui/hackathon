@@ -3,9 +3,7 @@ import * as React from 'react';
 
 export const RegisterButton = () => {
   const canRegister = Date.now() >= new Date('2022-05-03').getTime();
-  const hasExpired = Date.now() >= new Date('2022-05-06').getTime();
-
-  if (hasExpired) return null;
+  const hasExpired = Date.now() >= new Date('2022-05-05').getTime();
 
   if (!canRegister) {
     return (
@@ -30,10 +28,14 @@ export const RegisterButton = () => {
       colorScheme='teal'
       variant={canRegister ? 'solid' : 'ghost'}
       as='a'
-      href='https://docs.google.com/forms/d/1TxLVq0IWRkmCv4z8Yf5DYm89OxDl5WyWPAexgZRX1WU/edit'
+      disabled={hasExpired}
+      href={
+        !hasExpired &&
+        'https://docs.google.com/forms/d/1TxLVq0IWRkmCv4z8Yf5DYm89OxDl5WyWPAexgZRX1WU/edit'
+      }
       target='_blank'
     >
-      Register now
+      {hasExpired ? 'Registration closed' : 'Register now'}
     </Button>
   );
 };

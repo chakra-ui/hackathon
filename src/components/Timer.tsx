@@ -65,7 +65,7 @@ export const Timer = () => {
       py="4"
       px={{ base: '6', md: '8' }}
     >
-      <Text pb="4">Registration closes in:</Text>
+      <Text pb="4">Teams join the Discord Channel:</Text>
       <HStack spacing={{ base: '6', lg: '16' }} px={{ base: '4', lg: '6' }}>
         <TimeUnit value={days} label="days" />
         <TimeUnit value={hours} label="hours" />

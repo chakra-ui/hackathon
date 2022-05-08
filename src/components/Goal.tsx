@@ -6,20 +6,20 @@ import { Design, Develop, Document, Ideate } from './Icons';
 
 export const Goal = () => {
   return (
-    <Box as='section' id='about'>
-      <Box bg='secondaryBg' color='white' pt='24' pb='32'>
+    <Box as="section" id="about">
+      <Box bg="secondaryBg" color="white" pt="24" pb="32">
         <Box
           maxW={{ base: 'xl', md: '7xl' }}
-          mx='auto'
+          mx="auto"
           px={{ base: '6', md: '8' }}
         >
           <Heading
-            size='2xl'
-            lineHeight='short'
-            fontWeight='extrabold'
-            color='secondaryHeading'
+            size="2xl"
+            lineHeight="short"
+            fontWeight="extrabold"
+            color="secondaryHeading"
           >
-            Build the next best component in Chakra UI
+            Build the best Single Select component in Chakra UI
           </Heading>
 
           <SimpleGrid
@@ -27,20 +27,20 @@ export const Goal = () => {
             spacing={{ base: '12', md: '8', lg: '2' }}
             mt={{ base: '12', md: '20' }}
           >
-            <FeatureGoals icon={Ideate} title='Ideate'>
+            <FeatureGoals icon={Ideate} title="Ideate">
               Map out the component API. Figure out all of the moving parts and
               how the component will be implemented and used.
             </FeatureGoals>
-            <FeatureGoals icon={Design} title='Design'>
-              Design the component and variations using tools like Figma. It’s
-              always a good idea to have all variations design before
+            <FeatureGoals icon={Design} title="Design">
+              Design the Select component and variations using tools like Figma.
+              It’s always a good idea to have all variations design before
               implementing them.
             </FeatureGoals>
-            <FeatureGoals icon={Develop} title='Develop'>
+            <FeatureGoals icon={Develop} title="Develop">
               Develop the actual component. Turn your designs into an actual,
-              usable Chakra UI component code.
+              usable Chakra UI Single Select component.
             </FeatureGoals>
-            <FeatureGoals icon={Document} title='Document'>
+            <FeatureGoals icon={Document} title="Document">
               Provide a documentation on how to use the component, its props and
               different variations.
             </FeatureGoals>
@@ -48,22 +48,22 @@ export const Goal = () => {
         </Box>
       </Box>
 
-      <Box bg='alternativeBg' py='4'>
+      <Box bg="alternativeBg" py="4">
         <Box
           maxW={{ base: 'xl', md: '7xl' }}
-          mx='auto'
+          mx="auto"
           px={{ base: '6', md: '8' }}
-          py='16'
+          py="16"
         >
           <Box
             textAlign={{ base: 'left', lg: 'center' }}
-            mx='auto'
+            mx="auto"
             maxW={{ base: 'unset', lg: '600px' }}
           >
-            <Heading fontWeight='extrabold' size='2xl' as='h3'>
+            <Heading fontWeight="extrabold" size="2xl" as="h3">
               Get ready, tomodachi ✌️!
             </Heading>
-            <Stack mt='14' spacing='6'>
+            <Stack mt="14" spacing="6">
               <GoalDescription number={1}>
                 The theme for this Hackathon is <b>Anime</b>. This means every
                 team will have the freedom to pick their favorite Anime as their

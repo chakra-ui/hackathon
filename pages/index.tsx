@@ -22,7 +22,6 @@ export default function Home() {
       <Timeline />
       <Prizes />
       <Criteria />
-      <Register />
       <Footer />
     </div>
   );

@@ -49,7 +49,7 @@ export const useTimer = (props: UseTimerProps) => {
 const getSecondsFromExpiry = (expire: number) =>
   Math.round((expire - new Date().getTime()) / 1000);
 
-const expiresInSeconds = new Date('2022-05-09').getTime();
+const expiresInSeconds = new Date('2022-05-12').getTime();
 
 //Timer
 export const Timer = () => {
@@ -65,7 +65,7 @@ export const Timer = () => {
       py="4"
       px={{ base: '6', md: '8' }}
     >
-      <Text pb="4">Teams join the Discord Channel:</Text>
+      <Text pb="4">First round in progress!</Text>
       <HStack spacing={{ base: '6', lg: '16' }} px={{ base: '4', lg: '6' }}>
         <TimeUnit value={days} label="days" />
         <TimeUnit value={hours} label="hours" />

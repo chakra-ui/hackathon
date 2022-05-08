@@ -67,7 +67,7 @@ export const Timeline = () => {
           {timelineData.map((item, index) => {
             return (
               <TimelineItem
-                isActive={index < 4}
+                isActive={index < 6}
                 key={index}
                 description={item.description}
                 date={item.date}

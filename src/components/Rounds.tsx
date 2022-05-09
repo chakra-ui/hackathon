@@ -78,7 +78,8 @@ export const Rounds = () => {
                 Create a 3-5 minute video describing the API design and the
                 approach to tackling this challenge.
               </ListItem>
-              <ListItem>Upload video to Google Drive </ListItem>
+              <ListItem>Upload video to YouTube </ListItem>
+              <ListItem>Complete the submission form </ListItem>
             </UnorderedList>
           </Box>
           <Text
@@ -148,7 +149,8 @@ export const Rounds = () => {
               Create a 3-5 minute video describing your component, documentation
               and process
             </ListItem>
-            <ListItem>Upload video to Google Drive </ListItem>
+            <ListItem>Upload video to YouTube </ListItem>
+            <ListItem>Complete the submission form </ListItem>
           </UnorderedList>
         </Box>
       </Box>

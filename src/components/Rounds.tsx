@@ -15,51 +15,51 @@ import { RoundOne, RoundTwo } from './Icons';
 export const Rounds = () => {
   return (
     <Box
-      as="section"
-      id="rounds"
+      as='section'
+      id='rounds'
       maxW={{ base: 'xl', md: '7xl' }}
-      mx="auto"
+      mx='auto'
       px={{ base: '6', md: '8' }}
-      py="20"
+      py='20'
     >
       <DefaultHeading>The Rounds</DefaultHeading>
       <Text
-        pt="4"
-        lineHeight="tall"
-        color="defaultBody"
+        pt='4'
+        lineHeight='tall'
+        color='defaultBody'
         fontSize={{ base: 'xl', lg: '2xl' }}
       >
         The hackathon is divided into 2 rounds:
       </Text>
-      <Box mt="16" mb="12">
-        <HStack spacing="4" align="start">
+      <Box mt='16' mb='12'>
+        <HStack spacing='4' align='start'>
           <Icon
-            width="auto"
+            width='auto'
             as={RoundOne}
             fontSize={{ base: '2rem', lg: '2.5rem' }}
           />
           <Heading
             fontSize={{ base: '2xl', md: '4xl' }}
-            lineHeight="short"
-            fontWeight="extrabold"
-            color="defaultHeading"
+            lineHeight='short'
+            fontWeight='extrabold'
+            color='defaultHeading'
           >
             Round One (Elimination round)
           </Heading>
         </HStack>
         <Text
-          pt="4"
-          lineHeight="tall"
-          color="defaultBody"
+          pt='4'
+          lineHeight='tall'
+          color='defaultBody'
           fontSize={{ base: 'lg', lg: 'xl' }}
         >
           🗓 May 9th - May 11th, 2022
         </Text>
-        <Box py="4">
+        <Box py='4'>
           <Text
-            pt="4"
-            lineHeight="tall"
-            color="defaultBody"
+            pt='4'
+            lineHeight='tall'
+            color='defaultBody'
             fontSize={{ base: 'lg', lg: 'xl' }}
           >
             This is where teams present their component API design and walk us
@@ -69,9 +69,9 @@ export const Rounds = () => {
             welcome to show your faces, but it is not required.
           </Text>
           <Box
-            pt="4"
-            lineHeight="tall"
-            color="defaultBody"
+            pt='4'
+            lineHeight='tall'
+            color='defaultBody'
             fontSize={{ base: 'lg', lg: 'xl' }}
           >
             <Text>Mode of submission:</Text>
@@ -85,18 +85,18 @@ export const Rounds = () => {
             </UnorderedList>
           </Box>
           <Text
-            pt="4"
-            lineHeight="tall"
-            color="defaultBody"
+            pt='4'
+            lineHeight='tall'
+            color='defaultBody'
             fontSize={{ base: 'lg', lg: 'xl' }}
-            fontWeight="bold"
+            fontWeight='bold'
           >
             Deadline for Submission is 11th May @ 4pm GMT
           </Text>
           <Text
-            pt="4"
-            lineHeight="tall"
-            color="defaultBody"
+            pt='4'
+            lineHeight='tall'
+            color='defaultBody'
             fontSize={{ base: 'lg', lg: 'xl' }}
           >
             Only a selected number of teams will move on to the next stage.
@@ -106,40 +106,40 @@ export const Rounds = () => {
         <Button
           as={Link}
           isExternal
-          size="lg"
-          href="https://docs.google.com/forms/d/e/1FAIpQLScJg3t_UGiikarxMRkpLdGAIq3MNafYyZNaEHwRC0NngQIJZg/viewform"
+          size='lg'
+          href='https://docs.google.com/forms/d/e/1FAIpQLScJg3t_UGiikarxMRkpLdGAIq3MNafYyZNaEHwRC0NngQIJZg/viewform'
         >
           ✅ Submission Form
         </Button>
       </Box>
-      <Box mb="16" mt="12">
-        <HStack spacing="4" align="start">
+      <Box mb='16' mt='12'>
+        <HStack spacing='4' align='start'>
           <Icon
-            width="auto"
+            width='auto'
             as={RoundTwo}
             fontSize={{ base: '2rem', lg: '2.5rem' }}
           />
           <Heading
             fontSize={{ base: '2xl', md: '4xl' }}
-            lineHeight="short"
-            fontWeight="extrabold"
-            color="defaultHeading"
+            lineHeight='short'
+            fontWeight='extrabold'
+            color='defaultHeading'
           >
             Round Two (Final round)
           </Heading>
         </HStack>
         <Text
-          pt="4"
-          lineHeight="tall"
-          color="defaultBody"
+          pt='4'
+          lineHeight='tall'
+          color='defaultBody'
           fontSize={{ base: 'lg', lg: 'xl' }}
         >
           🗓 May 12th - May 18th, 2022
         </Text>
         <Text
-          pt="4"
-          lineHeight="tall"
-          color="defaultBody"
+          pt='4'
+          lineHeight='tall'
+          color='defaultBody'
           fontSize={{ base: 'lg', lg: 'xl' }}
         >
           In this round the teams go more into depth in designing the actual
@@ -147,9 +147,9 @@ export const Rounds = () => {
           documentation on the usage of the component.
         </Text>
         <Box
-          pt="4"
-          lineHeight="tall"
-          color="defaultBody"
+          pt='4'
+          lineHeight='tall'
+          color='defaultBody'
           fontSize={{ base: 'lg', lg: 'xl' }}
         >
           <Text>Mode of submission:</Text>
@@ -162,6 +162,23 @@ export const Rounds = () => {
             <ListItem>Upload video to YouTube </ListItem>
             <ListItem>Complete the submission form </ListItem>
           </UnorderedList>
+          <Text
+            pt='4'
+            lineHeight='tall'
+            color='defaultBody'
+            fontSize={{ base: 'lg', lg: 'xl' }}
+            fontWeight='bold'
+          >
+            Deadline for Submission is 18th May @ 4pm GMT
+          </Text>
+          <Text
+            pt='4'
+            lineHeight='tall'
+            color='defaultBody'
+            fontSize={{ base: 'lg', lg: 'xl' }}
+          >
+            Winners will be announced on 19th May
+          </Text>
         </Box>
       </Box>
     </Box>

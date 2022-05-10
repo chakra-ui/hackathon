@@ -116,8 +116,8 @@ export const Navigation = () => {
                   isExternal
                   leftIcon={
                     <svg
-                      stroke="black"
-                      fill="black"
+                      stroke="currentColor"
+                      fill="currentColor"
                       strokeWidth="0"
                       role="img"
                       viewBox="0 0 24 24"

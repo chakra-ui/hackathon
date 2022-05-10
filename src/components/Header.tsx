@@ -91,8 +91,8 @@ export const Header = () => {
             mt={{ base: 4, md: 0 }}
             leftIcon={
               <svg
-                stroke="black"
-                fill="black"
+                stroke="currentColor"
+                fill="currentColor"
                 strokeWidth="0"
                 role="img"
                 viewBox="0 0 24 24"

@@ -103,14 +103,6 @@ export const Rounds = () => {
             Information will be passed in the Discord channel.
           </Text>
         </Box>
-        <Button
-          as={Link}
-          isExternal
-          size='lg'
-          href='https://docs.google.com/forms/d/e/1FAIpQLScJg3t_UGiikarxMRkpLdGAIq3MNafYyZNaEHwRC0NngQIJZg/viewform'
-        >
-          ✅ Submission Form
-        </Button>
       </Box>
       <Box mb='16' mt='12'>
         <HStack spacing='4' align='start'>
@@ -171,6 +163,16 @@ export const Rounds = () => {
           >
             Deadline for Submission is 18th May @ 4pm GMT
           </Text>
+
+          <Button
+            mt='4'
+            as={Link}
+            isExternal
+            size='lg'
+            href='https://docs.google.com/forms/d/1R-rbfvkQRyWA3yqH21SKWQE4EHB44lxdQSswj0pxFiM/viewform'
+          >
+            ✅ Submission Form
+          </Button>
           <Text
             pt='4'
             lineHeight='tall'

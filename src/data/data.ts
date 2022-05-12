@@ -81,13 +81,13 @@ export const timelineData = [
     description: 'Final Round',
   },
   {
-    date: 'May 19th',
-    isoDate: '05-19-2022',
+    date: 'May 18th - May 20th',
+    isoDate: '05-20-2022',
     description: 'Review of video submission',
   },
   {
-    date: 'May 19th',
-    isoDate: '05-19-2022',
+    date: 'May 20th',
+    isoDate: '05-20-2022',
     description: 'Winners announced!',
   },
 ];

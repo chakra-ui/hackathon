@@ -179,7 +179,7 @@ export const Rounds = () => {
             color='defaultBody'
             fontSize={{ base: 'lg', lg: 'xl' }}
           >
-            Winners will be announced on 19th May
+            Winners will be announced on 20th May
           </Text>
         </Box>
       </Box>

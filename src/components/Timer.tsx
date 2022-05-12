@@ -49,7 +49,7 @@ export const useTimer = (props: UseTimerProps) => {
 const getSecondsFromExpiry = (expire: number) =>
   Math.round((expire - new Date().getTime()) / 1000);
 
-const expiresInSeconds = new Date('May 12, 2022 20:00:00 UTC').getTime();
+const expiresInSeconds = new Date('May 18, 2022 16:00:00 UTC').getTime();
 
 //Timer
 export const Timer = () => {
@@ -65,7 +65,7 @@ export const Timer = () => {
       py='4'
       px={{ base: '6', md: '8' }}
     >
-      <Text pb='4'>Review of submissions in progress</Text>
+      <Text pb='4'>Final round in progress:</Text>
       <HStack spacing={{ base: '6', lg: '16' }} px={{ base: '4', lg: '6' }}>
         <TimeUnit value={days} label='days' />
         <TimeUnit value={hours} label='hours' />

@@ -25,27 +25,27 @@ export const TimelineItem = (props: TimelineItemProp) => {
         minW={{ base: '0', lg: '300px' }}
       >
         <Icon
-          width="auto"
+          width='auto'
           as={Check}
           fontSize={{ base: '2rem', lg: '2.5rem' }}
           color={isActive ? 'activeIcon' : 'muted'}
         />
         <Text
-          lineHeight="tall"
+          lineHeight='tall'
           color={isActive ? 'defaultBody' : 'muted'}
           fontSize={{ base: 'xl', lg: '2xl' }}
-          fontWeight="medium"
+          fontWeight='medium'
         >
           {date}
         </Text>
       </HStack>
 
       <Text
-        lineHeight="tall"
+        lineHeight='tall'
         color={isActive ? 'defaultBody' : 'muted'}
         fontSize={{ base: 'xl', lg: '2xl' }}
-        fontWeight="medium"
-        textAlign="left"
+        fontWeight='medium'
+        textAlign='left'
       >
         {description}
       </Text>
@@ -55,19 +55,19 @@ export const TimelineItem = (props: TimelineItemProp) => {
 
 export const Timeline = () => {
   return (
-    <Box bg="defaultBg" as="section" py="20" id="timeline">
+    <Box bg='defaultBg' as='section' py='20' id='timeline'>
       <Box
         maxW={{ base: 'xl', md: '7xl' }}
-        mx="auto"
+        mx='auto'
         px={{ base: '6', md: '8' }}
-        py="8"
+        py='8'
       >
         <DefaultHeading>Timeline</DefaultHeading>
-        <Stack spacing={{ base: '20', lg: '12' }} my="20">
+        <Stack spacing={{ base: '20', lg: '12' }} my='20'>
           {timelineData.map((item, index) => {
             return (
               <TimelineItem
-                isActive={index < 7}
+                isActive={index < 8}
                 key={index}
                 description={item.description}
                 date={item.date}

@@ -21,7 +21,7 @@ export const Header = () => {
       textAlign='center'
     >
       <Text textTransform='uppercase' fontWeight='semibold' color='accentText'>
-        May 3rd - May 19th 2022
+        May 3rd - May 20th 2022
       </Text>
 
       <Heading

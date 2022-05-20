@@ -30,8 +30,8 @@ const navItems = [
     link: '#rules',
   },
   {
-    nav: 'Prizes',
-    link: '#prizes',
+    nav: 'Winners',
+    link: '#winners',
   },
   {
     nav: 'Timeline',
